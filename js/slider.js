@@ -8,8 +8,13 @@ const swiper = new Swiper('.main__slider', {
     },
     loop: true,
     noSwiping: false,
+    centeredSlides: true,
     breakpoints: {
         320: {
+            slidesPerView: 1
+        },
+
+        530: {
             slidesPerView: 2
         },
 
