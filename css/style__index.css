@@ -83,22 +83,6 @@
     margin: 0;
 }
 
-.hidden {
-    visibility: hidden;
-    opacity: 0;
-    position: fixed;
-    top: 0;
-    left: -99999px;
-}
-
-.visible {
-    visibility: visible;
-    opacity: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
 .join {
     width: 100%;
     height: 62px;
@@ -1168,6 +1152,22 @@
 @media (max-width: 1000px) {
     .join {
         display: none;
+    }
+
+    .hidden {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: -99999px;
+    }
+    
+    .visible {
+        visibility: visible;
+        opacity: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
     .header {
