@@ -1424,7 +1424,7 @@
 
     .main__sponsors {
         margin: 0 auto;
-        width: 400px;
+        width: 100%;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
@@ -1627,8 +1627,8 @@
 }
 
 @media (max-width: 630px) {
-    .main__finish {
-        display: none;
+    .main__finish__content {
+        top: 50%;
     }
 }
 
@@ -1686,15 +1686,6 @@
 
     .main__change__blocks__item__text {
         width: 100%;
-    }
-}
-
-@media (max-width: 415px) {
-    .main__sponsors {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
     }
 }
 
