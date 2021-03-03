@@ -1,14 +1,20 @@
-$(document).ready(function () {
-    $('.main__slider').slick({
-        arrows: false,
-        slidesToShow: 3.5,
-        draggable: false,
-        swipe: false,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        infinite: true,
-        pauseOnHover: true,
-        variableHeight: true,
-        centerMode: true,
-    })
-})
+const swiper = new Swiper('.main__slider', {
+    speed: 500,
+    spaceBetween: 100,
+    slidesPerView: 3,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    noSwiping: false,
+    breakpoints: {
+        320: {
+            slidesPerView: 2
+        },
+
+        800: {
+            slidesPerView: 3
+        }
+    }
+});
