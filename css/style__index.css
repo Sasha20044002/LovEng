@@ -1274,6 +1274,10 @@ body {
         width: 100%;
     }
 
+    .swiper-slide{
+        margin-right: 30px;
+    }
+
     .main__change__title {
         width: 66.44%;
     }
