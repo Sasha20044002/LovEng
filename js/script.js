@@ -63,6 +63,16 @@ style.textContent = `
         left: 50%;
     }
 }
+
+@media (max-width: 790px) and (min-width: 630px){
+    .main__finish__content{
+        width: 76%;
+        margin-left: 0;
+        margin-top: 0;
+        left: 4%;
+        top: 47%;
+    }
+}
 `;
 
 // Text
@@ -70,13 +80,4 @@ const changeText = document.querySelector('.main__change__title');
 
 if (window.innerWidth <= 630 || window.innerWidth >= 320) {
     changeText.textContent = "Что такое LovEng ?"
-}
-
-// Logo
-const headerLogoImg = document.querySelector('.header__logo__img');
-const headerLogoText = document.querySelector('.header__logo__text');
-
-if (window.innerWidth >= 320 && window.innerWidth <= 630){
-    headerLogoText.remove();
-    headerLogoImg.setAttribute('src', 'img/logo-2.svg')
 }
