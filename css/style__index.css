@@ -737,7 +737,7 @@
 }
 
 .main__change__blocks__item__text {
-  color: #000;
+  color: #1A222B;
   line-height: 22px;
   font-size: 16px;
   font-family: "Inter-Regular", sans-serif;
@@ -949,7 +949,7 @@
 
 .main__students__blocks__item {
   width: 401px;
-  min-height: 270px;
+  /* min-height: 270px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1990,6 +1990,7 @@
 
   .main__students__blocks__item {
     margin-bottom: 41px;
+    width: 100%;
   }
 }
 
