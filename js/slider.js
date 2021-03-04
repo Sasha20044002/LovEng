@@ -1,7 +1,7 @@
 const swiper = new Swiper('.main__slider', {
     speed: 500,
     spaceBetween: 100,
-    slidesPerView: 3,
+    slidesPerView: 4,
     autoplay: {
         delay: 1000,
         disableOnInteraction: false,
@@ -11,15 +11,15 @@ const swiper = new Swiper('.main__slider', {
     centeredSlides: true,
     breakpoints: {
         320: {
-            slidesPerView: 1
-        },
-
-        530: {
             slidesPerView: 2
         },
 
-        800: {
+        710: {
             slidesPerView: 3
+        },
+
+        800: {
+            slidesPerView: 4
         }
     }
 });
