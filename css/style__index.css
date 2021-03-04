@@ -2127,8 +2127,8 @@ body {
   }
 
   .main__start__content__title {
-    font-size: 45px;
-    line-height: 36px;
+    font-size: 36px;
+    line-height: 45px;
   }
 
   .main__start__content__text {
@@ -2305,8 +2305,8 @@ body {
   }
 
   .main__finish__content__title {
-    font-size: 50px;
-    line-height: 47px;
+    font-size: 47px;
+    line-height: 50px;
   }
 
   .main__finish__content__text {
@@ -2323,6 +2323,17 @@ body {
 
   .main__change__blocks__item__text {
     color: #808388;
+  }
+
+  .main__video__title{
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 28px;
+  }
+
+  .main__video__text{
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .main__finish__content {
