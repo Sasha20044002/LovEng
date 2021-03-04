@@ -21,7 +21,9 @@ close.addEventListener('click', function (e) {
 const changeImage = document.querySelectorAll('.main__change__blocks__item__img');
 
 for (let i = 0; i < changeImage.length; i++) {
-    if (window.innerWidth <= 1000) {
+    if (window.innerWidth >= 320 && window.innerWidth <= 630) {
+        changeImage[i].setAttribute('src', 'img/img' + i + '-small.png');
+    } else if (window.innerWidth <= 1000) {
         changeImage[i].setAttribute('src', 'img/img' + i + '-big.png');
     }
 }
@@ -56,3 +58,19 @@ style.textContent = `
     top: 50%;
 }
 `;
+
+// Text
+const changeText = document.querySelector('.main__change__title');
+
+if (window.innerWidth <= 630 || window.innerWidth >= 320) {
+    changeText.textContent = "Что такое LovEng ?"
+}
+
+// Logo
+const headerLogoImg = document.querySelector('.header__logo__img');
+const headerLogoText = document.querySelector('.header__logo__text');
+
+if (window.innerWidth >= 320 && window.innerWidth <= 630){
+    headerLogoText.remove();
+    headerLogoImg.setAttribute('src', 'img/logo-2.svg')
+}
