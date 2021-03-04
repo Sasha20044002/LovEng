@@ -313,29 +313,35 @@
 
 @-webkit-keyframes join {
   from {
-    margin-left: 0;
+    position: absolute;
+    right: -149px;
   }
 
   to {
-    margin-left: 0;
+    position: absolute;
+    right: -149px;
   }
 
   50% {
-    margin-left: 20px;
+    position: absolute;
+    right: -169px;
   }
 }
 
 @keyframes join {
   from {
-    margin-left: 0;
+    position: absolute;
+    right: -149px;
   }
 
   to {
-    margin-left: 0;
+    position: absolute;
+    right: -149px;
   }
 
   50% {
-    margin-left: 20px;
+    position: absolute;
+    right: -169px;
   }
 }
 
@@ -366,13 +372,17 @@ body {
   color: #fff;
   line-height: 21px;
   font-size: 17px;
+  margin-left: -149px;
   font-family: "Inter-Regular", sans-serif;
+  position: relative;
 }
 
 .join__text__link {
   color: #fff;
   font-family: "Inter-Bold";
   text-decoration: none;
+  position: absolute;
+  right: -149px;
   -webkit-animation-name: join;
   animation-name: join;
   -webkit-animation-duration: 2s;
@@ -570,7 +580,7 @@ body {
   color: #1A222B;
   line-height: 80px;
   font-size: 66px;
-  font-family: "Inter-Bold", sans-serif;
+  font-family: "Inter-SemiBold", sans-serif;
   width: 729px;
   margin-bottom: 42px;
 }
@@ -581,7 +591,7 @@ body {
   font-size: 22px;
   font-family: "Inter-Light", sans-serif;
   width: 732px;
-  margin-bottom: 80px;
+  margin-bottom: 64px;
 }
 
 .main__start__content__btn {
@@ -807,7 +817,8 @@ body {
 }
 
 .main__change__blocks__item__btn {
-  width: 163px;
+  width: 190px;
+  text-align: center;
   height: 57px;
   background-color: #1A222B;
   border: 2px solid #1A222B;
@@ -861,7 +872,7 @@ body {
   line-height: 27px;
   font-size: 22px;
   font-family: "Inter-Light", sans-serif;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   width: 853px;
 }
 
@@ -1161,7 +1172,13 @@ body {
   line-height: 27px;
   font-size: 19px;
   font-family: "Inter-Light", sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__online__history__content__text .span-1 {
+  margin-bottom: 40px;
 }
 
 .main__online__history__content__btn {
@@ -1269,7 +1286,7 @@ body {
   color: #1A222B;
   line-height: 28px;
   font-size: 18px;
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Inter-Light", sans-serif;
 }
 
 .main__finish {
@@ -1320,7 +1337,7 @@ body {
 }
 
 .main__finish__content__btn:focus,
-.main__finish__content__btn:active{
+.main__finish__content__btn:active {
   outline: none;
 }
 
@@ -1342,7 +1359,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 22px;
 }
 
 .footer__logo__img {
@@ -1421,11 +1437,13 @@ body {
 
 .footer__block__link__new::before {
   content: 'New!';
-  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-  background-color: #DF635C;
   width: 62px;
   height: 27px;
+  text-align: center;
+  background-image: url('../img/arrow-back.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2006,7 +2024,7 @@ body {
   }
 
   .main__finish__content__btn:focus,
-  .main__finish__content__btn:active{
+  .main__finish__content__btn:active {
     outline: none;
   }
 
@@ -2032,11 +2050,12 @@ body {
 
   .footer__block__link__new::after {
     content: 'New!';
-    -webkit-clip-path: polygon(0% 50%, 15% 0%, 100% 0%, 100% 100%, 15% 100%);
-    clip-path: polygon(0% 50%, 15% 0%, 100% 0%, 100% 100%, 15% 100%);
-    background-color: #DF635C;
     width: 62px;
     height: 27px;
+    background-image: url('../img/arrow-back-2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2325,13 +2344,13 @@ body {
     color: #808388;
   }
 
-  .main__video__title{
+  .main__video__title {
     font-size: 36px;
     line-height: 45px;
     margin-bottom: 28px;
   }
 
-  .main__video__text{
+  .main__video__text {
     font-size: 16px;
     line-height: 20px;
   }

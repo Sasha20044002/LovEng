@@ -54,8 +54,14 @@ style.textContent = `
     position: absolute;
     margin-top: ${finishContent.offsetHeight / 2 * (-1)}px;
     margin-left: ${finishContent.offsetWidth / 2 * (-1)}px;
-    left: 50%;
+    left: 70%;
     top: 50%;
+}
+
+@media (max-width: 1000px) {
+    .main__finish__content{
+        left: 50%;
+    }
 }
 `;
 
