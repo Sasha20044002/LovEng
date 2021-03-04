@@ -706,6 +706,12 @@ body {
   flex-wrap: wrap;
 }
 
+.main__sponsors-2,
+.main__sponsors-3,
+.main__sponsors-4{
+  opacity: .63;
+}
+
 .main__slider {
   display: none;
 }
@@ -1295,7 +1301,7 @@ body {
 
 .main__finish__img {
   width: 100%;
-  height: auto;
+  height: 639px;
 }
 
 .main__finish__content {
