@@ -1703,7 +1703,6 @@ body {
 	.header__content__nav #small-menu #tel {
 		margin: 0 auto;
 		width: 96.77%;
-		height: 91px;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -1716,6 +1715,7 @@ body {
 		background: #eef2f2;
 		border-radius: 5px;
 		margin-bottom: 9px;
+		padding: 28px 0;
 	}
 
 	.header__content__nav #small-menu #tel a {
